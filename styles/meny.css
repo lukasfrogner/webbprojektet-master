@@ -1,0 +1,93 @@
+:root {
+    --background-color-: #2f4f4f;
+    --border-color-: black;
+  }
+
+body {
+    background-image: url('../bilder/back.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+a {
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    border:  3px solid;
+    padding: 5px;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2:hover {
+    color: blue;
+}
+.desktop-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color-);
+    height: 100px;
+    margin: 15px;
+    overflow: hidden;
+    border: 5px solid var(--border-color-);
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 767.98px) {
+    
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+        background-color: var(--background-color-);
+    }
+    .mobile-menu {
+        color: #add8e6;
+        
+        font-size: 2rem;
+        justify-content: start;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+        border: solid var(--border-color-) 5px;
+    }
+    nav.menu{
+        display: none;
+    }
+    .mobile-menu label {
+        display: block;
+        text-align: center;
+    }
+    #menucheck {
+        display: none;
+    }
+    #menucheck:checked + nav.menu,
+    #menucheck:checked + nav.menu{
+        display: block;
+    }
+    nav.menu ul{
+        padding: 5px;
+        list-style: none;
+    }
+    nav.menu li a{
+        color: lightblue;
+        background-color: var(--background-color-);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+        border-bottom: solid 3px var(--border-color-);
+    }
+}

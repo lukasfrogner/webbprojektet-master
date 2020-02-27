@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DalaSneakers</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/slide.css">
+  <link rel="stylesheet" href="styles/meny.css">
+  <link rel="stylesheet" href="styles/card.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="left"><img src="bilder/logo.png" alt="bild på vår logo"></div>
+    <div class="middle">
+      <h1>Dalarnas Sneaker Shop</h1>
+    </div>
+    <div class="right"><a href="./kundkorg.html"><i class="fa fa-shopping-cart"></i></a></div>
+  </header>
+
+
+  <!--Våran meny-->
+  <div class="desktop-menu">
+    <a href="webbprojekt.html">
+      <h2>STARTSIDA</h2>
+    </a>
+    <a href="herr.html">
+      <h2>HERR</h2>
+    </a>
+    <a href="dam.html">
+      <h2>DAM</h2>
+    </a>
+    <a href="barn.html">
+      <h2>BARN</h2>
+    </a>
+  </div>
+
+  <!-- Våran mobil-meny -->
+
+  <div class="mobile-menu">
+    <label for="menucheck">&#9776;</label>
+    <input type="checkbox" id="menucheck" />
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="webbprojekt.html">STARTSIDA</a>
+        </li>
+        <li>
+          <a href="herr.html">HERR</a>
+        </li>
+        <li>
+          <a href="dam.html">DAM</a>
+        </li>
+        <li>
+          <a href="barn.html">BARN</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <!-- Slide container -->
+  <div class="slideshow-container">
+
+    <!-- bild och text i vår slide -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="bilder/Sneakers-PNG-Transparent-Picture.png" style="width:100%" alt="bild på skor">
+      <div class="text">Nike - 299 kr</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="bilder/Sneakers-PNG-Transparent.png" style="width:100%" alt="bild på skor">
+      <div class="text">Vans - 399 kr</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="bilder/Sneakers-PNG-Picture.png" style="width:100%" alt="bild på skor">
+      <div class="text">Adidas - 599 kr </div>
+    </div>
+
+    <!-- framåt och bakåt knapp i slide -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- runda cirklar under slide -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- Här är vår textruta under sliden -->
+  <div class="information-container">
+    <div class="information-items">
+      <p>Just nu hos oss är det mellandagsrea! Vi från Dalasneakers erbjuder de här skorna ovanför till halva priset. Så
+        skynda fynda!
+      </p>
+    </div>
+  </div>
+
+  <!--Här börjar våra cards-->
+
+  <div class="cards">
+    <div class="container">
+      <img src="bilder/sneakersherr1.jpeg" alt="Ett par vita skor från företaget Fila för 699kr" style="width:100%">
+      <h4><b>Fila</b></h4>
+      <p>699 kr <a class="info-button" href="sko1.html">Info</a> </p>
+    </div>
+
+    <div class="container">
+      <img src="bilder/sneakersherr2.jpeg" alt="En mörk blå sko från företaget Nike för 499kr" style="width:100%">
+      <h4><b>Nike </b></h4>
+      <p>499 kr <a class="info-button" href="sko2.html">Info</a></p>
+    </div>
+
+    <div class="container">
+      <img src="bilder/sneakersherr3.jpeg" alt="En ljusgrå sko från företaget Adidas för 399kr" style="width:100%">
+      <h4><b>Adidas</b></h4>
+      <p>399 kr <a class="info-button" href="sko3.html">Info</a></p>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="container">
+      <img src="bilder/sneakersherr4.jpeg" alt="En vit sko med svart undersida från Nike för 999kr" style="width:100%">
+      <h4><b>Nike</b></h4>
+      <p>999 kr <a class="info-button" href="sko4.html">Info</a></p>
+    </div>
+
+    <div class="container">
+      <img src="bilder/sneakersherr5.jpeg" alt="En hel vit sko från företaget Asics för 799kr" style="width:100%">
+      <h4><b>Asics</b></h4>
+      <p>799 kr <a class="info-button" href="sko5.html">Info</a></p>
+    </div>
+
+    <div class="container">
+      <img src="bilder/sneakersherr6.jpeg" alt="En beige sko från företaget Reebook för 599kr" style="width:100%">
+      <h4><b>Reebook</b></h4>
+      <p>599 kr <a class="info-button" href="sko6.html">Info</a></p>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="container">
+      <img src="bilder/sneakersherr7.jpeg" alt="En vit sko från företaget Adidas för 699kr" style="width:100%">
+      <h4><b>Adidas</b></h4>
+      <p>699 kr <a class="info-button" href="sko7.html">Info</a></p>
+    </div>
+    <div class="container">
+      <img src="bilder/sneakersherr8.jpeg" alt="En rosa sko från företaget Puma för 799kr" style="width:100%">
+      <h4><b>Puma </b></h4>
+      <p>799 kr <a class="info-button" href="sko8.html">Info</a></p>
+    </div>
+    <div class="container">
+      <img src="bilder/sneakersherr9.jpeg" alt="En vit sko från företaget Reebok för 699kr" style="width:100%">
+      <h4><b>Reebook</b></h4>
+      <p>699 kr <a class="info-button" href="sko9.html">Info</a></p>
+    </div>
+  </div>
+
+  <!-- Här börjar vår footer -->
+
+  <footer>
+    <div class="footer-left">
+        <div class="left"><img src="bilder/ehandel.jpeg" alt="bild på vår logo"></div>
+        <div class="left"><img src="bilder/dhl.jpeg" alt="bild på vår logo"></div>
+        <div class="left"><p>Gratis frakt <br>Gratis retur <br>30 dagars öppet köp</p></div>
+    </div>
+    <div class="footer-middle">
+      <a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+      <a class="instagram" href="https://www.instagram.com/?hl=sv"><i class="fa fa-instagram"></i></a>
+      <a class="twitter" href="https://twitter.com/?lang=sv"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="footer-right">
+        <div class="trust"><p>Kontakta oss<br>
+            Telefonnummer: 028 - 88 88 88<br>
+            Alla dagar 10:00-20:00<br>
+            Mail:question@zanashoe.com</p></div>
+        <div class="trust"><img src="bilder/glad.jpg" alt="bild på trust"></div>
+    </div>
+  </footer>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // framåt och bakåt kontrollerna
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // runda cirklarna under slide
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    // här skapas slide-funktionen
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>
